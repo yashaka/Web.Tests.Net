@@ -27,7 +27,7 @@ namespace Web.Tests.Model.Common
 
         public void FollowLink(int index)
         {
-            list[index].Find("a").Click();
+            list[index].Find("[data-testid=result-title-a],[data-test-id=result-link]").Click();
         }
     }
 }

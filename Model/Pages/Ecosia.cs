@@ -8,7 +8,7 @@ namespace Web.Tests.Model.Pages
 {
     internal class Ecosia 
     {
-        public Results Results => new Results(SS(".js-result"));
+        public Results Results => new Results(SS("[data-test-id=organic-result]"));
 
         internal void Open()
         {

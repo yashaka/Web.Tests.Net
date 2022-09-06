@@ -8,7 +8,7 @@ namespace Web.Tests.Model.Pages
 {
     internal class Duckduckgo
     {
-        public Results Results => new Results(SS(".results_links_deep"));
+        public Results Results => new Results(SS("[data-testid=result]"));
 
         internal void Open()
         {

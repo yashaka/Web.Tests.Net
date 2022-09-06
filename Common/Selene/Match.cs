@@ -15,7 +15,7 @@ namespace Web.Tests.Common.Selene
     {
 
             private string expected;
-            private string actual;
+            private string? actual;
 
             public TitleContaining(string text)
             {
@@ -28,7 +28,7 @@ namespace Web.Tests.Common.Selene
                 return this.actual.Contains(this.expected);
             }
 
-            public override string DescribeActual()
+            public override string? DescribeActual()
             {
                 return this.actual;
             }
